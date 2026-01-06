@@ -530,6 +530,18 @@
             margin-bottom: 0.75rem;
         }
 
+        .project-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: rgba(74, 144, 217, 0.2);
+            border: 1px solid rgba(74, 144, 217, 0.3);
+            border-radius: 4px;
+            font-size: 0.65rem;
+            color: var(--navy-bright);
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
         .project-card p {
             color: var(--text-muted);
             font-size: 0.9rem;
@@ -779,7 +791,7 @@
                 Engineer
             </h1>
             <p class="hero-subtitle">
-                Building scalable backend systems and AI-powered applications. Passionate about APIs, distributed systems, and shipping products that deliver real impact.
+                Building backend systems, APIs, and data pipelines. I design services that scale, integrate ML capabilities, and ship products that work in production.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">
@@ -809,24 +821,24 @@
             </div>
             
             <div class="about-text reveal">
-                <h3>Engineer with a systems mindset</h3>
+                <h3>Software engineer who ships</h3>
                 <p>
-                    Software engineer with 2+ years of experience building production backend systems, real-time data pipelines, and AI-powered applications. I work across the stack but specialize in backend development with Java, Python, and modern cloud technologies.
+                    I build the systems behind the product — APIs, data pipelines, services that need to work at scale. With 2+ years of production experience, I focus on backend development using Python, Java, and cloud infrastructure, with the ability to integrate ML capabilities when the problem calls for it.
                 </p>
                 <p>
-                    I've shipped scalable solutions that improve system reliability and deliver measurable business impact — from CI/CD pipelines that cut build times by 30% to LLM-powered automation that reduced manual work by 70%. Based in Albuquerque, NM with a CS degree from UNM.
+                    At Tau Technologies, I built real-time data pipelines processing 10+ concurrent streams, shipped an LLM-powered automation service that cut manual work by 70%, and deployed prediction services via internal APIs. I care about code that's maintainable, systems that are observable, and shipping things that actually work.
                 </p>
                 <div class="tech-tags">
-                    <span class="tech-tag">Java</span>
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Java</span>
                     <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Spring Boot</span>
                     <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Redis</span>
                     <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">AWS</span>
                     <span class="tech-tag">REST APIs</span>
                     <span class="tech-tag">CI/CD</span>
-                    <span class="tech-tag">TensorFlow</span>
                 </div>
             </div>
         </div>
@@ -842,6 +854,27 @@
             <div class="project-card reveal">
                 <div class="project-icon">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="18" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 11L15 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M6 18L8 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
+                        <path d="M20 10L22 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
+                    </svg>
+                </div>
+                <h3>GymMatch <span class="project-badge">In Development</span></h3>
+                <p>Social fitness platform backend for matching gym partners. Features custom Elo-based ranking algorithm for compatibility scoring, async task queue for match processing, and real-time matching APIs.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>PostgreSQL</span>
+                    <span>Supabase</span>
+                    <span>Docker</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="4" y="8" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
                         <path d="M8 4V8M20 4V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         <circle cx="10" cy="15" r="2" fill="currentColor"/>
@@ -851,13 +884,13 @@
                     </svg>
                 </div>
                 <h3>BodyMorph</h3>
-                <p>Full-stack AI fitness platform with React Native mobile app and FastAPI backend. Features OpenAI GPT integration for personalized workout recommendations and custom CNN models for body analysis.</p>
+                <p>Backend for personal fitness platform serving workout tracking, nutrition logging, and analytics via RESTful APIs. Includes OpenAI integration for coaching, JWT auth, and Redis caching for performance.</p>
                 <div class="project-tech">
-                    <span>React Native</span>
+                    <span>Python</span>
                     <span>FastAPI</span>
                     <span>PostgreSQL</span>
+                    <span>Redis</span>
                     <span>OpenAI API</span>
-                    <span>TensorFlow</span>
                 </div>
             </div>
             
@@ -871,8 +904,8 @@
                         <path d="M19 7L23 3M23 3V7M23 3H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h3>LLM Document Automation</h3>
-                <p>Autonomous document generation system using LLM APIs with prompt chaining and goal-driven execution. Automated report creation workflows and reduced manual documentation time by 70%.</p>
+                <h3>LLM Document Service</h3>
+                <p>Document generation service using LLM APIs with prompt chaining and goal-driven execution. Automated report workflows and reduced manual documentation time by 70%.</p>
                 <div class="project-tech">
                     <span>Python</span>
                     <span>OpenAI API</span>
@@ -891,31 +924,12 @@
                     </svg>
                 </div>
                 <h3>Real-Time Data Pipeline</h3>
-                <p>Containerized data pipeline processing streaming data with ML-based algorithms that improved measurement accuracy by 10%. Built with Python, Docker, and real-time messaging protocols.</p>
+                <p>Containerized pipeline processing streaming data from 10+ concurrent sources. Improved data accuracy by 10% using fusion algorithms. Built with Python, Docker, and ZeroMQ.</p>
                 <div class="project-tech">
                     <span>Python</span>
                     <span>Docker</span>
                     <span>ZeroMQ</span>
                     <span>Protocol Buffers</span>
-                </div>
-            </div>
-            
-            <div class="project-card reveal">
-                <div class="project-icon">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="3" y="6" width="22" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
-                        <path d="M7 18V14M11 18V12M15 18V10M19 18V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <circle cx="22" cy="8" r="3" fill="currentColor"/>
-                        <path d="M3 10H25" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" opacity="0.5"/>
-                    </svg>
-                </div>
-                <h3>Monitoring Dashboard</h3>
-                <p>TypeScript web application for real-time data visualization and monitoring. Enables operators to track system performance and detect anomalies across distributed deployments.</p>
-                <div class="project-tech">
-                    <span>TypeScript</span>
-                    <span>React</span>
-                    <span>WebSocket</span>
-                    <span>REST APIs</span>
                 </div>
             </div>
         </div>
@@ -935,11 +949,11 @@
                     <h3>Software Engineer</h3>
                     <h4>Tau Technologies</h4>
                     <ul class="timeline-bullets">
-                        <li>Built containerized real-time streaming pipeline using Python and Docker, processing concurrent data from 10+ sources with ML-based fusion algorithms that improved data accuracy by 10%</li>
+                        <li>Built containerized real-time data pipeline using Python and Docker, processing concurrent streams from 10+ sources and improving data accuracy by 10%</li>
+                        <li>Engineered LLM-powered document generation service with prompt chaining and goal-driven execution, reducing manual documentation time by 70%</li>
+                        <li>Deployed prediction service processing time-series data with 95%+ accuracy, exposing results via internal APIs for real-time decision-making</li>
+                        <li>Built monitoring service analyzing performance telemetry to flag potential failures, improving system reliability and reducing unplanned downtime</li>
                         <li>Developed TypeScript dashboard for real-time data visualization and system health monitoring across distributed infrastructure</li>
-                        <li>Engineered LLM-powered document generation system with prompt chaining and goal-driven execution, reducing manual documentation time by 70%</li>
-                        <li>Designed and deployed ML prediction models achieving 95%+ accuracy on production time-series datasets</li>
-                        <li>Built predictive maintenance system analyzing performance telemetry to flag potential failures before critical breakdowns</li>
                     </ul>
                 </div>
             </div>
@@ -951,22 +965,22 @@
                     <h3>Software Engineer Intern</h3>
                     <h4>Tau Technologies</h4>
                     <ul class="timeline-bullets">
-                        <li>Reduced build times by 30% by implementing automated CI/CD pipelines and build optimization scripts</li>
-                        <li>Increased user satisfaction by 20% through UI/UX improvements based on A/B testing and usability analysis</li>
-                        <li>Debugged and resolved critical bugs in distributed systems serving production traffic, conducting root cause analysis to minimize downtime</li>
-                        <li>Developed high-throughput data collection services using ZeroMQ for real-time messaging</li>
+                        <li>Developed high-throughput data collection services using ZeroMQ for real-time messaging between distributed system components</li>
                         <li>Optimized inter-service communication using Protocol Buffers, improving serialization efficiency across distributed microservices</li>
+                        <li>Reduced build times by 30% by implementing automated CI/CD pipelines and build optimization scripts</li>
+                        <li>Resolved critical bugs in distributed systems serving production traffic through root cause analysis, minimizing downtime</li>
+                        <li>Shipped UI/UX improvements based on A/B testing and usability analysis, increasing user satisfaction by 20%</li>
                     </ul>
                 </div>
             </div>
             
             <div class="timeline-item reveal">
                 <div class="timeline-dot"></div>
-                <p class="timeline-date">August 2019 — May 2024</p>
+                <p class="timeline-date">May 2024</p>
                 <div class="timeline-content">
                     <h3>B.S. Computer Science</h3>
                     <h4>University of New Mexico</h4>
-                    <p>Focused on systems programming, machine learning, and software engineering. Built strong foundations in algorithms, data structures, and distributed systems.</p>
+                    <p>Focused on systems programming, distributed systems, and software engineering.</p>
                 </div>
             </div>
         </div>
@@ -979,7 +993,7 @@
         </div>
         
         <div class="contact-content reveal">
-            <p>I'm currently seeking new full-time software engineering opportunities. Whether you have a role that might be a fit, want to collaborate on a project, or just want to chat about backend systems, AI, or scaling, I'd love to hear from you.</p>
+            <p>I'm currently looking for backend and full-stack engineering roles. If you have a position that might be a fit, want to collaborate, or just want to talk shop about APIs, distributed systems, or scaling — I'd love to hear from you.</p>
             
             <div class="contact-links">
                 <a href="mailto:Atah.Omar101@gmail.com" class="contact-link">
@@ -999,7 +1013,7 @@
     </section>
 
     <footer>
-        <p>© 2025 Atah. Built with purpose.</p>
+        <p>© 2026 Atah. Built with purpose.</p>
     </footer>
 
     <script>
